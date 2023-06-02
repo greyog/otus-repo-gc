@@ -4,11 +4,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Summator {
-    private Integer sum = 0;
-    private Integer prevValue = 0;
-    private Integer prevPrevValue = 0;
-    private Integer sumLastThreeValues = 0;
-    private Integer someValue = 0;
+    private long sum = 0;
+    private long prevValue = 0;
+    private long prevPrevValue = 0;
+    private long sumLastThreeValues = 0;
+    private long someValue = 0;
     private final List<Data> listValues = new ArrayList<>();
 
     //!!! сигнатуру метода менять нельзя
@@ -30,23 +30,23 @@ public class Summator {
         }
     }
 
-    public Integer getSum() {
+    public long getSum() {
         return sum;
     }
 
-    public Integer getPrevValue() {
+    public long getPrevValue() {
         return prevValue;
     }
 
-    public Integer getPrevPrevValue() {
+    public long getPrevPrevValue() {
         return prevPrevValue;
     }
 
-    public Integer getSumLastThreeValues() {
+    public long getSumLastThreeValues() {
         return sumLastThreeValues;
     }
 
-    public Integer getSomeValue() {
+    public long getSomeValue() {
         return someValue;
     }
 }
